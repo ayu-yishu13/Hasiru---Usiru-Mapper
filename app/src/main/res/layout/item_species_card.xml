@@ -1,0 +1,12 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/speciesCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:cardCornerRadius="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="14dp">
+        <View android:id="@+id/speciesColorSwatch" android:layout_width="64dp" android:layout_height="64dp" />
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp">
+            <TextView android:id="@+id/speciesTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:fontFamily="sans-serif-medium" />
+            <TextView android:id="@+id/speciesSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/speciesFactor" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/speciesDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+            <TextView android:id="@+id/speciesDetails" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

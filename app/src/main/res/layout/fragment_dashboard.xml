@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingTop="76dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="24dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Street's Oxygen Score" android:textSize="18sp" />
+                <TextView android:id="@+id/totalOxygenScoreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="56sp" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp">
+            <TextView android:id="@+id/treeCountText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="80dp" android:gravity="center" android:text="0\nTrees" />
+            <TextView android:id="@+id/nativeCountText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="80dp" android:gravity="center" android:text="0\nNative" />
+            <TextView android:id="@+id/emptyPitCountText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="80dp" android:gravity="center" android:text="0\nEmpty Pits" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Top 5 species" android:textSize="20sp" android:fontFamily="sans-serif-medium" android:layout_marginTop="16dp" />
+        <LinearLayout android:id="@+id/topSpeciesChart" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/shareScoreButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Share Score" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add more trees to increase your street's score!" android:background="@color/green_light" android:textColor="@android:color/black" android:padding="16dp" android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

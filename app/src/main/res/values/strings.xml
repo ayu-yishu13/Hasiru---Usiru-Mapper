@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hasiru-Usiru</string>
+    <string name="tagline">Map your green neighbourhood</string>
+    <string name="map">Map</string>
+    <string name="tag_tree">Tag Tree</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="species_guide">Species Guide</string>
+    <string name="save_to_map">Save to Map</string>
+    <string name="identifying_tree">Identifying tree with AI...</string>
+    <string name="offline_mode">Offline mode</string>
+    <string name="location_needed">Location is needed to place the tree accurately on the map. You can enter coordinates manually if permission is denied.</string>
+    <string name="camera_needed">Camera is needed to capture tree photos. You can choose an image from your gallery instead.</string>
+</resources>
