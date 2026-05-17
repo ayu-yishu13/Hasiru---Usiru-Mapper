@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tag a Tree" android:textSize="26sp" android:fontFamily="sans-serif-medium" />
+        <androidx.camera.view.PreviewView android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="12dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/captureButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Capture" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/galleryButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Gallery" />
+        </LinearLayout>
+        <ImageView android:id="@+id/capturedImageView" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="12dp" android:scaleType="centerCrop" android:visibility="gone" />
+        <LinearLayout android:id="@+id/aiLoadingLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+            <ProgressBar android:layout_width="36dp" android:layout_height="36dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/identifying_tree" />
+        </LinearLayout>
+        <TextView android:id="@+id/locationAccuracyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Getting location..." android:paddingVertical="8dp" />
+        <LinearLayout android:id="@+id/treeFormLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Species name"><com.google.android.material.textfield.TextInputEditText android:id="@+id/speciesInput" android:layout_width="match_parent" android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Scientific name"><com.google.android.material.textfield.TextInputEditText android:id="@+id/scientificInput" android:layout_width="match_parent" android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Kannada name"><com.google.android.material.textfield.TextInputEditText android:id="@+id/kannadaInput" android:layout_width="match_parent" android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup android:id="@+id/healthRadioGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:checkedButton="@id/healthGood">
+                <RadioButton android:id="@+id/healthGood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Good" />
+                <RadioButton android:id="@+id/healthSick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sick" />
+                <RadioButton android:id="@+id/healthDead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dead" />
+            </RadioGroup>
+            <Switch android:id="@+id/emptyPitSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Is this an Empty Pit?" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/girthInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Girth in cm"><com.google.android.material.textfield.TextInputEditText android:id="@+id/girthInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" /></com.google.android.material.textfield.TextInputLayout>
+            <TextView android:id="@+id/oxygenScoreText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Oxygen Score: 0" android:textSize="18sp" android:padding="8dp" />
+            <CheckBox android:id="@+id/nativeCheckBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Is this a native tree?" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Latitude"><com.google.android.material.textfield.TextInputEditText android:id="@+id/latitudeInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal|numberSigned" /></com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:hint="Longitude"><com.google.android.material.textfield.TextInputEditText android:id="@+id/longitudeInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal|numberSigned" /></com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/saveTreeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/save_to_map" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

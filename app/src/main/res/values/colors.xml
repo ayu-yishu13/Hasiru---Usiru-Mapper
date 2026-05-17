@@ -1,0 +1,7 @@
+<resources>
+    <color name="green_primary">#2E7D32</color>
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="marker_red">#D32F2F</color>
+    <color name="marker_yellow">#FBC02D</color>
+</resources>

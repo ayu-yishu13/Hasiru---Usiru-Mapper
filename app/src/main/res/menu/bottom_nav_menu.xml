@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_map" android:icon="@drawable/ic_marker_green" android:title="@string/map" />
+    <item android:id="@+id/nav_tag_tree" android:icon="@drawable/ic_leaf" android:title="@string/tag_tree" />
+    <item android:id="@+id/nav_dashboard" android:icon="@drawable/ic_marker_yellow" android:title="@string/dashboard" />
+    <item android:id="@+id/nav_species" android:icon="@drawable/ic_marker_green" android:title="@string/species_guide" />
+</menu>

@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingTop="76dp">
+    <com.google.android.material.button.MaterialButtonToggleGroup android:id="@+id/languageToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" app:singleSelection="true" app:checkedButton="@id/englishButton">
+        <com.google.android.material.button.MaterialButton android:id="@+id/englishButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/kannadaButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ಕನ್ನಡ" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/speciesRecyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" />
+</LinearLayout>

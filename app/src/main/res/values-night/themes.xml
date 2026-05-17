@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.HasiruUsiruMapper" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_light</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorSecondary">@color/green_primary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
